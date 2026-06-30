@@ -623,6 +623,60 @@ function Hero() {
         </motion.div>
       </div>
 
+      <motion.div
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.72 }}
+        className="hidden xl:flex absolute right-8 top-24 z-20"
+      >
+        <div
+          className="glow-card rounded-[24px] p-5"
+          style={{
+            width: 280,
+            background: "rgba(3,11,24,0.9)",
+            border: "1px solid rgba(0,212,255,0.16)",
+            boxShadow: "0 28px 60px rgba(0,0,0,0.22)",
+          }}
+        >
+          <div className="flex items-center gap-3 mb-4">
+            <div
+              className="flex items-center justify-center rounded-3xl"
+              style={{ width: 46, height: 46, background: "#24292e" }}
+            >
+              <Github size={20} color="#ffffff" />
+            </div>
+            <div>
+              <div className="text-sm font-semibold" style={{ color: "#e8f4fd" }}>
+                GitHub HUD
+              </div>
+              <div className="text-[0.72rem] uppercase tracking-[0.18em]"
+                style={{ color: "#7dd3fc", fontFamily: "'JetBrains Mono', monospace" }}
+              >
+                @Shubham2917
+              </div>
+            </div>
+          </div>
+
+          <p className="text-xs leading-relaxed mb-4" style={{ color: "#8ab9d1" }}>
+            Explore my GitHub profile for open-source repos, MERN projects, and code contributions. Tap the button to visit my profile.
+          </p>
+          <a
+            href="https://github.com/Shubham2917"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-2xl px-4 py-3 text-sm font-medium"
+            style={{
+              width: "100%",
+              background: "linear-gradient(135deg,#00d4ff,#00ffc8)",
+              color: "#03131e",
+              textDecoration: "none",
+            }}
+          >
+            View GitHub Profile
+          </a>
+        </div>
+      </motion.div>
+
       {/* Scroll hint */}
       <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
@@ -837,7 +891,6 @@ function TechStack() {
 const ACHIEVEMENTS = [
   { icon: "🏆", title: "TCS Selected", sub: "Selected in TCS recruitment drive" },
   { icon: "💼", title: "Prodigy InfoTech", sub: "Full Stack Development Internship" },
-  { icon: "📊", title: "Deloitte", sub: "Data Analytics Job Simulation" },
   { icon: "🧠", title: "295 LeetCode", sub: "139 Easy · 126 Medium · 30 Hard" },
   { icon: "🌐", title: "Open Source", sub: "Active contributor on GitHub" },
   { icon: "🎯", title: "Daily Coder", sub: "Consistent daily problem solver" },
